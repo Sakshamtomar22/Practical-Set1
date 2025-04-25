@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polling App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Polling App</h1>
+      <div id="auth-status">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+      </div>
+    </header>
+    
+    <div id="auth-section" style="display: none;">
+      <form id="auth-form">
+        <h2 id="auth-title"></h2>
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="create-poll" style="display: none;">
+      <h2>Create Poll</h2>
+      <form id="poll-form">
+        <input type="text" id="poll-title" placeholder="Poll Title" required>
+        <div id="options">
+          <input type="text" class="option" placeholder="Option 1" required>
+          <input type="text" class="option" placeholder="Option 2" required>
+        </div>
+        <button type="button" id="add-option">Add Option</button>
+        <button type="submit">Create Poll</button>
+      </form>
+    </div>
+
+    <div id="polls">
+      <h2>Available Polls</h2>
+      <div id="poll-list"></div>
+    </div>
+
+    <div id="poll-details" style="display: none;">
+      <h2 id="poll-detail-title"></h2>
+      <div id="poll-options"></div>
+      <div id="poll-results"></div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
