@@ -1,2 +1,2 @@
 # Practical-Set1
-This is my Project Set 01
+This is my Practical Set 01
